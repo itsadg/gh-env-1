@@ -5,6 +5,7 @@ on:
       - main
       - dev
       - master
+  workflow_dispatch:
 env:
   MONGODB_DB_NAME: gha-demo      
 jobs:
@@ -12,7 +13,7 @@ jobs:
     env:
       MONGODB_CLUSTER_ADDRESS: gha-demo.ebgo4nh.mongodb.net
       MONGODB_USERNAME: itsadg
-      MONGODB_PASSWORD: P5SXmLSqb59oWa2c
+      MONGODB_PASSWORD: H2Kqr54FEYFdj6jG
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
